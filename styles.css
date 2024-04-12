@@ -28,10 +28,10 @@ body {
     content: '';
     position: fixed;
     top: 0;
-    left: 10%;
-    right: 10%;
+    left: 20%;
+    right: 20%;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
     z-index: -1; /* Behind the content */
    } 
 
@@ -58,6 +58,20 @@ body {
     text-align: center;
     background-color: rgb(245, 217, 5);
     padding: 1rem 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      font-size: 14px; /* Smaller font size for mobile */
+    }
+    
+    .retro-button {
+      padding: 8px 16px; /* Adjust padding for better click target area */
+    }
+    
+    h1, h2, h3 {
+      text-align: left; /* Left-align text on mobile */
+    }
   }
   
   /* Add more styles as needed */
