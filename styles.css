@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
   }
 
   h1 {
@@ -61,9 +61,12 @@ body {
   }
 
   @media only screen and (max-width: 768px) {
-    header {
-        padding: 0.5rem;  /* Reduce padding for smaller screens */
-        font-size: 1.2rem;  /* Adjust font size for better readability */
+    header,h1 {
+        display: flex; /* Enable flexbox layout for easy centering */
+        justify-content: space-between; /* Align items horizontally with space in between */
+        align-items: center; /* Align items vertically */
+        padding: 1rem 1.5rem; /* Padding for content spacing */
+        background-color: rgb(245, 217, 5);
       }
 
     .container {
