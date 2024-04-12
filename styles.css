@@ -1,3 +1,9 @@
+header {
+    text-align: center;
+    background-color: rgb(245, 217, 5);
+    padding: 1rem 0;
+}
+
 body {
     background-image: url('assets/star-background3.png');
     background-repeat: repeat;
@@ -53,14 +59,13 @@ body {
     transform: translateY(2px); /* Move button down slightly on hover */
     box-shadow: 0 3px  rgb(245, 217, 5); /* Shadow effect on hover */
   }
-  
-  header {
-    text-align: center;
-    background-color: rgb(245, 217, 5);
-    padding: 1rem 0;
-  }
 
   @media only screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem;  /* Reduce padding for smaller screens */
+        font-size: 1.2rem;  /* Adjust font size for better readability */
+      }
+
     .container {
       font-size: 14px; /* Smaller font size for mobile */
     }
@@ -69,7 +74,7 @@ body {
       padding: 8px 16px; /* Adjust padding for better click target area */
     }
     
-    h1, h2, h3 {
+    h1, h2, h3, p {
       text-align: left; /* Left-align text on mobile */
     }
   }
