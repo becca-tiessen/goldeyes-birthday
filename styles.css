@@ -1,0 +1,63 @@
+body {
+    background-image: url('assets/star-background3.png');
+    background-repeat: repeat;
+    font-family: 'Comic Sans MS', 'Chalkboard', 'Chalkboard SE', sans-serif;
+    cursor: url('assets/glove.png'), auto;
+    margin: 0;
+    padding: 0;
+    /* Other styles */
+  }
+
+  .container {
+    text-align: center;
+    z-index: 1; /* Ensure content is above the background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    z-index: -1; /* Behind the content */
+   } 
+
+   .retro-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    background-color: #00ffe5; /* Retro color */
+    border: 2px solid rgb(245, 217, 5); /* Retro border color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px  rgb(245, 217, 5); /* Initial shadow for 3D effect */
+  }
+  
+  .retro-button:hover {
+    transform: translateY(2px); /* Move button down slightly on hover */
+    box-shadow: 0 3px  rgb(245, 217, 5); /* Shadow effect on hover */
+  }
+  
+  header {
+    text-align: center;
+    background-color: rgb(245, 217, 5);
+    padding: 1rem 0;
+  }
+  
+  /* Add more styles as needed */
