@@ -1,8 +1,28 @@
 header {
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: rgb(245, 217, 5);
+  color: black;
+    /* text-align: center;
     background-color: rgb(245, 217, 5);
-    padding: 1rem 0;
+    padding: 1rem 0; */
 }
+
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+p {
+  line-height: 1.5; /* Adjust line spacing for readability */
+}
+
+/* h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
 
 body {
     background-image: url('assets/star-background3.png');
@@ -22,12 +42,6 @@ body {
     justify-content: center;
     align-items: center;
     height: auto;
-  }
-
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .container::before {
@@ -61,14 +75,6 @@ body {
   }
 
   @media only screen and (max-width: 768px) {
-    header,h1 {
-        display: flex; /* Enable flexbox layout for easy centering */
-        justify-content: space-between; /* Align items horizontally with space in between */
-        align-items: center; /* Align items vertically */
-        padding: 1rem 1.5rem; /* Padding for content spacing */
-        background-color: rgb(245, 217, 5);
-      }
-
     .container {
       font-size: 14px; /* Smaller font size for mobile */
     }
@@ -82,4 +88,4 @@ body {
     }
   }
   
-  /* Add more styles as needed */
+  
