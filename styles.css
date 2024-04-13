@@ -1,6 +1,7 @@
 header {
   display: flex;
   justify-content: space-around;
+  align-content: center;
   align-items: center;
   padding: 1rem 0;
   background-color: rgb(245, 217, 5);
@@ -27,7 +28,7 @@ p {
 body {
     background-image: url('assets/star-background3.png');
     background-repeat: repeat;
-    font-family: 'Comic Sans MS', 'Chalkboard', 'Chalkboard SE', sans-serif;
+    font-family: 'Comic Sans MS', 'Chalkboard', 'Chalkboard SE', 'Arial', sans-serif;
     cursor: url('assets/glove.png'), auto;
     margin: 0;
     padding: 0;
@@ -44,6 +45,10 @@ body {
     height: auto;
   }
 
+  .schedule {
+    text-align: left;
+  }
+
   .container::before {
     content: '';
     position: fixed;
@@ -58,6 +63,7 @@ body {
    .retro-button {
     display: inline-block;
     padding: 10px 20px;
+    margin-bottom: 50px;
     font-size: 16px;
     text-decoration: none;
     color: black;
